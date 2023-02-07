@@ -1,0 +1,84 @@
+
+
+
+
+<div class="login-container">
+  <form action="/login" method="post">
+    <h2>Login</h2>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit" id="login-button">Submit</button>
+  </form>
+</div>
+
+
+<style>
+  .login-container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .form-group {
+      margin: 10px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+
+</style>
+
+<!-- <script>
+  const loginButton = document.getElementById("login-button");
+const loginForm = document.getElementById("login-form");
+
+loginButton.addEventListener("click", function(event) {
+event.preventDefault();
+
+// Do your authentication logic here to check if the user is valid
+
+// If the user is valid, redirect to the greeting page
+window.location.href = "upload.html"
+});
+
+</script> -->
